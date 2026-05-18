@@ -44,7 +44,7 @@ export default function App() {
         />
       </div>
 
-      <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+      <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
         A tecnologia que impulsiona o seu negócio
       </h1>
 
