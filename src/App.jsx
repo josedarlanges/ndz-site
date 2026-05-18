@@ -1,3 +1,4 @@
+import logo from "./assets/logo.png";
 import heroImage from './assets/hero2.png'
 export default function App() {
   return (
@@ -8,7 +9,8 @@ export default function App() {
   className="
     text-white
     px-6
-    py-20
+    pt-8
+    pb-20
     md:min-h-screen
     flex
     items-center
@@ -30,50 +32,49 @@ export default function App() {
         : "none"
   }}
 >
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+  <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
 
-          <div>
-            <div className="mb-10">
-            <h2 className="text-3xl font-bold text-white">
-              NDZ
-            </h2>
+    <div>
 
-            <p className="text-lime-400 tracking-[0.3em] uppercase text-sm">
-              Tecnologia
-              </p>
-            </div>
-            <h1 className="text-5xl font-bold leading-tight mb-6">
-              A tecnologia que impulsiona o seu negócio
-            </h1>
+      <div className="mb-14 flex items-start">
+        <img
+          src={logo}
+          alt="NDZ Tecnologia"
+          className="w-60 md:w-80 lg:w-[420px]"
+        />
+      </div>
 
-            <p className="text-xl text-slate-200 mb-8 leading-relaxed">
-              Soluções em Microsoft 365, Azure e suporte técnico para pequenas empresas.
-            </p>
+      <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+        A tecnologia que impulsiona o seu negócio
+      </h1>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+      <p className="text-xl text-slate-200 mb-8 leading-relaxed">
+        Soluções em Microsoft 365, Azure e suporte técnico para pequenas empresas.
+      </p>
 
-              <a
-                href="https://wa.me/5511994773143"
-                target="_blank"
-                className="bg-lime-500 hover:bg-lime-400 transition px-6 py-4 rounded-2xl text-lg font-semibold text-black text-center"
-              >
-                Fale comigo no WhatsApp
-              </a>
+      <div className="flex flex-col sm:flex-row gap-4">
 
-              <a
-                href="#servicos"
-                className="border border-white/30 hover:bg-white/10 transition px-6 py-4 rounded-2xl text-lg text-center"
-              >
-                Ver serviços
-              </a>
+        <a
+          href="https://wa.me/5511994773143"
+          target="_blank"
+          className="bg-lime-500 hover:bg-lime-400 transition px-6 py-4 rounded-2xl text-lg font-semibold text-black text-center"
+        >
+          Fale comigo no WhatsApp
+        </a>
 
-            </div>
-          </div>
+        <a
+          href="#servicos"
+          className="border border-white/30 hover:bg-white/10 transition px-6 py-4 rounded-2xl text-lg text-center"
+        >
+          Ver serviços
+        </a>
 
-   
+      </div>
 
-        </div>
-      </section>
+    </div>
+
+  </div>
+</section>
 
       {/* SERVIÇOS */}
       <section id="servicos" className="py-20 px-6 bg-slate-50">
