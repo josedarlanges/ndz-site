@@ -36,7 +36,7 @@ export default function App() {
 
     <div>
 
-      <div className="mb-14 flex items-start">
+      <div className="mb-4 flex items-start">
         <img
           src={logo}
           alt="NDZ Tecnologia"
