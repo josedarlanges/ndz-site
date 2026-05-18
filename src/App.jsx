@@ -4,13 +4,30 @@ export default function App() {
     <div className="min-h-screen bg-white text-slate-900 font-sans">
       
       {/* HERO */}
-      <section
-  className="text-white px-6 py-20 bg-no-repeat bg-center bg-[length:100%]"
+<section
+  className="
+    text-white
+    px-6
+    py-20
+    md:min-h-screen
+    flex
+    items-center
+    bg-[#031B4E]
+    md:bg-no-repeat
+    md:bg-center
+    md:bg-cover
+  "
   style={{
-    backgroundImage: `linear-gradient(
-      rgba(3, 15, 40, 0.82),
-      rgba(3, 15, 40, 0.82)
-    ), url(${heroImage})`
+    backgroundImage:
+      window.innerWidth >= 768
+        ? `
+          linear-gradient(
+            rgba(3, 15, 40, 0.82),
+            rgba(3, 15, 40, 0.82)
+          ),
+          url(${heroImage})
+        `
+        : "none"
   }}
 >
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
